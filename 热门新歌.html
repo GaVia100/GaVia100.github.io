@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="1.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>热门歌曲</title>
+<style>
+    .banner{
+        background-color: #d7e5fc;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .container{
+        display: flex;
+        width: 100%;
+    }
+
+    .nav{
+        width: 30%;
+        background-color: #d7e5fc;
+        padding: 10px;
+    }
+
+    .nav p {
+        cursor: pointer;
+        color:black;
+        padding: 8px;
+        background-color: rgb(156, 226, 247);
+        margin: 5px 0;
+        text-align:center;
+    }
+
+    .nav p:hover {
+        background-color: #7e8897;
+    }
+
+    .description{
+        width: 70%;
+        background-color:rgb(156, 226, 247);
+        padding: 10px;
+        display: none; 
+    }
+</style>
+</head>
+<body>
+    <div id="A">
+        <div class="大标题">音悦台.com</div>
+        <div class="导航栏">
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="热门新歌.html">热门新歌</a></li>
+            <li><a href="MV.html">MV</a></li>
+            <li><a href="MUSIC.html">歌曲</a></li>
+            <li><a href="留言.html">留言</a></li>
+          </ul>
+        </div>
+      </div>
+    <div class="banner">
+        <h1>热门歌曲</h1>
+    </div>
+
+    <div class="container">
+        <div class="nav">
+            <p onclick="showDescription('songs1')">日韩新专</p>
+            <p onclick="showDescription('songs2')">欧美爆款</p>
+            <p onclick="showDescription('songs3')">余音绕梁</p>
+        </div>
+        <div class="description" id="songs1">
+            <p>Drama</p>
+            <p>Sheesh</p>
+            <p>Magnetic</p>
+        </div>
+        <div class="description" id="songs2">
+            <p>Numb</p>
+            <p>Shot In The Dark</p>
+            <p>emptylove</p>
+        </div>
+        <div class="description" id="songs3">
+            <p>十年人间</p>
+            <p>如愿</p>
+            <p>光的方向</p>
+        </div>
+    </div>
+
+    <script>
+        function showDescription(id) {
+            var descriptions = document.getElementsByClassName('description');
+            for (var i = 0; i < descriptions.length; i++) {
+                descriptions[i].style.display = 'none';
+            }
+            document.getElementById(id).style.display = 'block';
+        }
+
+        window.onload = function() {
+            showDescription('songs1');
+        };
+    </script>
+</body>
+</html>

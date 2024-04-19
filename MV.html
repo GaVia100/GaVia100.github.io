@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="1.css">
+    <style>
+        body {
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .video-container {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .video-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .video-title {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="A">
+        <div class="大标题">音悦台.com</div>
+        <div class="导航栏">
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="热门新歌.html">热门新歌</a></li>
+            <li><a href="MV.html">MV</a></li>
+            <li><a href="MUSIC.html">歌曲</a></li>
+            <li><a href="留言.html">留言</a></li>
+          </ul>
+        </div>
+      </div>
+    <div class="video-container">
+        <video controls>
+            <source src="素材/追星.MP4" type="video/mp4">
+        </video>  
+        <div class="video-title">Star Walkin</div>
+    </div>
+    <div class="video-container">
+        <video controls>
+            <source src="素材/drama.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">Drama</div>
+    </div>
+    <div class="video-container">
+        <video controls>
+            <source src="素材/孤勇者.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">孤勇者</div>
+    </div>
+    <div class="video-container">
+        <video controls>
+            <source src="素材/empty.mp4" type="video/mp4">
+        </video>  
+        <div class="video-title">emptylove</div>
+    </div>
+    <div class="video-container">
+        <video controls>
+            <source src="素材/sjlt.mp4" type="video/mp4">
+        </video>  
+        <div class="video-title">Something Just Like This</div>
+    </div>
+    <div class="video-container">
+        <video controls>
+            <source src="素材/【IVE】《After LIKE》官方MV公开！.mp4" type="video/mp4">
+        </video>  
+        <div class="video-title">After Like</div>
+    </div>
+</body>
+</html>

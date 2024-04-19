@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="1.css">
+    <style>
+        audio {
+            display: block;
+            margin: 20px auto;
+            width: 70%;
+            max-width: 500px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        audio:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        audio::-webkit-media-controls-panel {
+            background-color: transparent;
+            color: #333;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        audio::-webkit-media-controls-play-button {
+            background-color: #A10000;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            transition: background-color 0.3s ease;
+        }
+
+        audio::-webkit-media-controls-play-button:hover {
+            background-color: #FF0000;
+        }
+
+        audio::-webkit-media-controls-time-remaining-display {
+            color: #A10000;
+        }
+    </style>
+</head>
+<body>
+    <div id="A">
+        <div class="大标题">音悦台.com</div>
+        <div class="导航栏">
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="热门新歌.html">热门新歌</a></li>
+            <li><a href="MV.html">MV</a></li>
+            <li><a href="MUSIC.html">歌曲</a></li>
+            <li><a href="留言.html">留言</a></li>
+          </ul>
+        </div>
+      </div>
+    <audio controls>
+        <source src="素材/emptylove.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
